@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Ajax\Ajax.aspx" />
+    <Content Include="Ajax\getJSON.aspx" />
+    <Content Include="Ajax\AjaxData.aspx" />
+    <Content Include="Ajax\getPost.aspx" />
     <Content Include="Effects\DisplayEffects\HideAndShow.aspx" />
     <Content Include="Effects\DisplayEffects\Toggle.aspx" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -79,6 +83,31 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax\Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\getJSON.aspx.cs">
+      <DependentUpon>getJSON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\getJSON.aspx.designer.cs">
+      <DependentUpon>getJSON.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\AjaxData.aspx.cs">
+      <DependentUpon>AjaxData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\getPost.aspx.cs">
+      <DependentUpon>getPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\getPost.aspx.designer.cs">
+      <DependentUpon>getPost.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Effects\DisplayEffects\HideAndShow.aspx.cs">
       <DependentUpon>HideAndShow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
